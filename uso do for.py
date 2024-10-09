@@ -36,3 +36,16 @@ for numero in range(7, -1, -1):
 numeros = list(range(8))
 for numero in reversed(numeros):
     print(numero)
+
+# Solicita os valores inicial e final ao usuário para crescente e decrescente
+valor_inicial = int(input("Digite o valor inicial: "))
+valor_final = int(input("Digite o valor final: "))
+
+if valor_inicial <= valor_final:
+    print("Sequência em ordem crescente:")
+    for i in range(valor_inicial, valor_final +1, 1):
+        print(i)
+else:
+    print("Sequência em ordem decrescente:")
+    for j in range(valor_inicial, valor_final -1, -1):
+        print(j)
