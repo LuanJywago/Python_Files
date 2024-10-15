@@ -285,3 +285,55 @@ if foto == "Sim":
     print(f"O valor total foi de R${ingresso} reais. Agradecemos a visita!")
 if foto == "Não":
     print("Obrigado por andar na montanha russa!")
+
+#Solicita o valor final para o usuário
+valor_final = int(input("Digite o valor que deseja ir ate o final em ordem crescente: "))
+contador = 0
+
+for i in range (1,valor_final,1):
+    contador +=1
+    print(i)
+print(f"Foram gerados {contador} numeros no contador")
+
+
+# soma do dobro dos numeros
+soma = 0
+contagem = 0
+
+for i in range(1, 6):
+    dobro = i * 2
+    print(dobro)
+    soma += dobro
+    contagem += 1
+media = soma / contagem
+
+print(f"Soma: {soma}")
+print(f"Média: {media}")
+
+
+#Media da turma com FOR
+quantidade_alunos = 50
+soma = 0
+
+for i in range(0, quantidade_alunos):
+    nota = float(input("Digite a media dos alunos: "))
+    soma += nota
+
+media_turma = soma / quantidade_alunos
+
+print(f"Soma das notas: {soma}")
+print(f"Média da turma: {media_turma}")
+
+
+#Fahrenheit para Celcius em
+print(f" {'Fahrenheit'} | {'Celsius'}")
+for fahrenheit in range(45, 81):
+    celcius = 5 * (fahrenheit - 32) / 9
+    print(f"{fahrenheit:.1f} ºF | {celcius:.3f} ºC")
+
+
+#Numeros aleatorios com import random
+import random
+for i in range(5):
+    i = random.randint(0, 95)
+    print(i)
