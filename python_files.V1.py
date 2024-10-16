@@ -337,3 +337,30 @@ import random
 for i in range(5):
     i = random.randint(0, 95)
     print(i)
+
+
+# Solicita os valores inicial e final ao usuário
+valor_inicial = int(input("Digite o valor inicial: "))
+valor_final = int(input("Digite o valor final: "))
+contador = 0
+soma = 0
+
+if valor_inicial < valor_final:
+    print("Sequência em ordem crescente:")
+    for i in range(valor_inicial, valor_final +1, 1):
+        print(i, end=" ")
+        contador += 1
+        soma += i
+    print(f"\nA quantidade dos numeros foi: {contador}")
+    print(f"\nA soma dos numeros foi de : {soma}")
+
+elif valor_inicial > valor_final:
+    print("Sequência em ordem decrescente:")
+    for j in range(valor_inicial, valor_final -1, -1):
+        print(j, end=" ")
+        contador +=1
+        soma += j
+    print(f"\nA quantidade dos numeros foi: {contador}")
+    print(f"\nA soma dos numeros foi de : {soma}")
+else:
+    print("Os valores são iguais, por favor, informe valores válidos")
