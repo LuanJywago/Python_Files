@@ -364,3 +364,21 @@ elif valor_inicial > valor_final:
     print(f"\nA soma dos numeros foi de : {soma}")
 else:
     print("Os valores são iguais, por favor, informe valores válidos")
+
+#Começo do uso do def in fuction
+def calcular_dobro(p_valor):
+    dobro = p_valor *2
+    return dobro
+
+def calcular_triplo(p_valor2):
+    triplo = p_valor2 *3
+    return triplo
+
+if __name__ == '__main__':
+    p_valor = int(input("Digite o valor para dobrar: "))
+    retorno = calcular_dobro(p_valor)
+    print(f"o valor retornado de {p_valor} é {retorno}")
+
+    p_valor2 = int(input("Digite o valor para ser triplicado: "))
+    retorno2 = calcular_triplo(p_valor2)
+    print(f"O valor informado de {p_valor2} é {retorno2}")
