@@ -382,3 +382,47 @@ if __name__ == '__main__':
     p_valor2 = int(input("Digite o valor para ser triplicado: "))
     retorno2 = calcular_triplo(p_valor2)
     print(f"O valor informado de {p_valor2} é {retorno2}")
+
+#informa mesnagem e numero passado pelo usuário
+def mostar_mensagem (mensagem, numero):
+    print(f'Descreva a messagem {mensagem} ')
+    print(f'Escreva o número informado: {numero}')
+
+def main ():
+    mensagem = input("Mensagem passada: ")
+    numero = float(input("Número a passar: "))
+    mostar_mensagem(mensagem, numero)
+
+
+if __name__ == '__main__':
+    main()
+
+#calcula a idade informada pelo ano pelo usuário
+def calcula_idade(ano):
+    ano_atual = 2024
+    idade = ano_atual - ano
+    return idade
+
+def main():
+    ano_nascimento = int(input("Digite o ano de nascimento: "))
+    idade = calcula_idade(ano_nascimento)
+    print(f"A idade da pessoa é de: {idade} anos")
+
+if __name__ == "__main__":
+    main()
+
+
+#informa 2 valores inteiros passados pelo usuário como retorno de leitura
+def val_inteiro (val1, val2):
+    print(f'O valor 1 foi: {val1}')
+    print(f'O valor 2 foi: {val2}')
+
+def main():
+    print('Informe os valores em números inteiros!')
+    val1 = int(input("Digite o valor 1: "))
+    val2 = int(input("Digite o valor 2: "))
+    val_inteiro(val1,val2)
+
+
+if __name__ == '__main__':
+    main()
