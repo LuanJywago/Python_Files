@@ -426,3 +426,48 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+## Compilado de codigos utulizando a lista e seus atributos envolvidos
+numeros = []
+
+
+while True:
+    valor = input("Digite algo para acrescentar à lista ou [0] para parar: ")
+    if valor.lower() == "sair":
+        break
+    valor = int(valor)
+    numeros.append(valor)
+
+quantidade = len(numeros)
+print(quantidade)
+
+soma = sum(numeros)
+print(soma)
+
+maior = max(numeros)
+print(maior)
+
+menor = min(numeros)
+print(menor)
+
+if 5 in numeros:
+    print("True")
+else:
+    ("False")
+
+verificar_posicao = print(numeros.index(5))
+ordem_crescente = numeros.sort()
+numeros [5] = 33
+
+numeros.reverse()
+print(numeros)
+
+media = soma/quantidade
+print(f"{media:.1f}")
+
+contador = 0
+for valor in numeros:
+    if valor > 10:
+        contador = + 1
+valor_maior_10 = (contador / quantidade) * 100
+print(valor_maior_10)
