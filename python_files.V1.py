@@ -471,3 +471,26 @@ for valor in numeros:
         contador = + 1
 valor_maior_10 = (contador / quantidade) * 100
 print(valor_maior_10)
+
+#gerador de senha usando for com método fácil
+import random
+letras = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+numeros = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+simbolos = ["@", "!", "#", "%", "¨", "&", "*", "(", ")", "-"]
+
+quant_letra = int(input("Quantas letras você quer ter na senha? "))
+quant_numero = int(input("Quantos numeros você quer ter na senha? "))
+quant_simbolos = int(input("Quantos simbolos você quer ter na senha? "))
+
+senha = ""
+
+for char in range(1, quant_letra + 1):
+    senha += random.choice(letras)
+
+for char in range(1, quant_numero + 1):
+    senha += random.choice(numeros)
+
+for char in range(1, quant_simbolos + 1):
+    senha += random.choice(simbolos)
+
+print(senha)
