@@ -105,13 +105,13 @@ ano_atual = 2024
 idade = ano_atual - ano_do_nascimento
 
 if idade == 16:
-    print("VAI VOTAR NO BOLSONARO 22! SEM LULA AQUI. sua idade é:", idade)
+    print("sua idade é:", idade)
 elif idade == 17:
-    print("VAI VOTAR NO BOLSONARO 22! SEM LULA AQUI. sua idade é:", idade, "Já já você tira a CNH")
+    print("sua idade é:", idade, "Já já você tira a CNH")
 elif idade > 18:
-    print("VAI VOTAR NO BOLSONARO 22! SEM LULA AQUI. sua idade é:", idade, "Já aproveita pra tirar a carteira")
+    print("sua idade é:", idade, "Já aproveita pra tirar a carteira")
 else:
-    print("Vai descansar que aqui é papo de adulto, criança maldita. sua idade ainda é:", idade)
+    print("Vai descansar que aqui é papo de adulto, criança. Sua idade ainda é:", idade)
 
 
 
